@@ -7,7 +7,7 @@ import './custom.css'
 const App = (props ) => {
   return (
       <>
-        {/*<Header />*/}
+        <Header />
         <Home />
       </>
   )
