@@ -1,18 +1,16 @@
 import React, { Component } from 'react';
-import { Route } from 'react-router';
-import { Layout } from './components/Layout';
-import { Home } from './components/Home';
+import Header from "./components/header";
+import Home from "./components/home";
 
 import './custom.css'
 
-export default class App extends Component {
-  static displayName = App.name;
-
-  render () {
-    return (
-      <Layout>
-        <Route exact path='/' component={Home} />
-      </Layout>
-    );
-  }
+const App = (props ) => {
+  return (
+      <>
+        {/*<Header />*/}
+        <Home />
+      </>
+  )
 }
+
+export default App;
